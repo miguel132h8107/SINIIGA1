@@ -1,0 +1,197 @@
+
+
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>SINIIGA</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+ 
+<!-- ** -->
+<!-- ** -->
+<div class="container"> <!-- contenedor general  -->
+  <form> <!--Iniciamos formulario, donde tenemos campos de entrada de datos/confirmacion, Botones, envio-->
+    <div class="row"><!-- Definimos contenedor donde estaran la caja del Formulario -->
+   
+       
+        <center> <img width="136px" height="126px" src="img/LogoSAGARPA.jpg" > </center><!-- Imagen de SINIIGA-->
+
+       
+     <h2>SISTEMA NACIONAL DE IDENTIFICACION INDIVIDUAL DE GANADO(SINIIGA)</h2>  
+     <h3>CEDULA DE IDENTIFICACION ESPECIE (BOVINA)</h3> <!--Titulo -->
+     <h4>Clave UPP</h4> <!-- nombre de la caja-->
+        <div class="input-group input-group-icon"> <!-- inicio campo Clave UPP-->
+        <input type="text" placeholder="Clave UPP"/> <!-- Nombre de la caja de ingresar texto-->
+        <div class="input-icon"><i class="fa fa-wrench" aria-hidden="true"></i></div> <!-- Imagen Del Icono Para El Formulario-->
+      </div> <!-- Fin campo Clave UPP-->
+       
+        <h4>Nombre Del Productor</h4> <!--Nombre de la caja-->
+      <div class="input-group input-group-icon"><!--inicio campo Nom. Productor-->
+        <input type="text" placeholder="Nombre Del Productor"/><!--Nombre dela caja-->
+       <div class="input-icon"><i class="fa fa-user" aria-hidden="true"></i></div> <!--icono para el input text-->
+      </div> <!-- Fin campo Nom. Productor-->
+    
+       <div class="row"> <!--Contenedro Donde estaran nombre del predio y nombre del tecnico-->
+        <div class="col-half">  <!-- iniciamos datos del nombre predio-->
+        <h4>Nombre Del Predio</h4> <!--titulo de la caja-->
+        <div class="input-group input-group-icon"> <!-- Inicio campo Nombre predio-->
+        <input type="text" placeholder="Nombre Del Predio"/> <!-- nombre dela caja-->
+        <div class="input-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div> <!--Icono-->
+      </div> <!--finalizamos campo nombre Predio-->
+      </div> <!--terminamos datos del predio-->
+      
+           <div class="col-half"> <!--Iniciamos datos-->
+        <h4>Nombre Del Tecnico</h4>
+        <div class="input-group input-group-icon">
+        <input type="text" placeholder="Nombre Del Tecnico"/>
+        <div class="input-icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+      </div>
+      </div> <!--Finaizamos Datos--> 
+    </div> <!--Finalizamos contenedor-->
+        
+       <div class="row"> <!--iniciamos contenedor serie del y AL-->
+      <div class="col-half">
+        <h4>Serie Del</h4>
+        <div class="input-group input-group-icon">
+        <input type="text" placeholder="Serie Del"/>
+        <div class="input-icon"><i class="fa fa-sort-numeric-asc" aria-hidden="true"></i></div>
+      </div>
+      </div>
+      <div class="col-half">
+        <h4>AL</h4>
+        <div class="input-group input-group-icon">
+        <input type="text" placeholder="AL"/>
+        <div class="input-icon"><i class="fa fa-list-alt" aria-hidden="true"></i></div>
+      </div>
+      </div>
+       </div>  <!--finalizamos contenedor--> 
+        
+        
+     <div class="row"> <!--iniciamos contenedor campos Total. paq. compl, Fech. Aretado-->
+       <div class="col-half">
+        <h4>Total De Paq. Compl.</h4>
+        <div class="input-group input-group-icon">
+        <input type="text" placeholder="Total Paq. Completos"/>
+        <div class="input-icon"><i class="fa fa-th-list" aria-hidden="true"></i></div>
+      </div>
+      </div>
+         
+         <div class="col-half">
+        <h4>Fecha Del Aretado</h4>
+        <div class="input-group">
+      <input type="date" name="fechaAre" id="fechaAre">  <!--Iniciamos un input de type Date, para la fecha-->
+        </div>
+        </div>
+        </div> <!--Finalizamos contenedor Campos Tota. Paq. Comple, Fech. Aretado-->
+      
+       <label>Campos Obligatorios**</label>   <!-- formulario tipo label, para tener como referencia que apartir de ahi son datos obligatorios-->
+      <div class="row"> <!--iniciamos contenedor NO. SINIIGA, ARETe CAMPANA-->
+      <div class="col-half">
+        <h4>No. SINIIGA</h4>
+        <div class="input-group input-group-icon">
+        <input type="text" placeholder="No. SINIIGA"/>
+        <div class="input-icon"><i class="fa fa-sort-numeric-asc" aria-hidden="true"></i></div>
+      </div>
+      </div>
+      <div class="col-half">
+        <h4>Arete Campaña</h4>
+        <div class="input-group input-group-icon">
+        <input type="text" placeholder="Arete Campaña"/>
+        <div class="input-icon"><i class="fa fa-building-o" aria-hidden="true"></i></div>
+      </div>
+      </div>
+    </div> <!--Finaizamos Contenedor No. SINIIGA, ARETE CAMAPANA-->
+         
+         
+         <div class="row"> <!--Iniciamos contenedor Campos Fecha de nacimiento del Bovino, Genero-->
+         <div class="col-half">
+        <h4>Fecha De Nacimiento</h4>
+        <div class="input-group">
+          <div class="col-third">
+            <input type="text" placeholder="MM"/>
+          </div>
+          <div class="col-third">
+            <input type="text" placeholder="AAAA"/>
+          </div>
+        </div>
+        </div>
+             
+             <div class="col-half">
+         <h4>Género</h4>
+             <div class="input-group">
+            <input type="radio" name="gender" value="male" id="gender-male"/>
+            <label for="gender-male">Hembra</label>
+           <input type="radio" name="gender" value="female" id="gender-female"/>
+          <label for="gender-female">Macho</label>
+        </div>
+      </div>
+    </div> <!-- Cerramos contenedor Campos Fecha y Genero-->
+   
+         <div class="row"> <!-- iniciamos contenedor Raza, Especificar Raza/Cruza-->
+ <div class="col-half">
+        <h4>Raza*</h4>
+        <div class="input-group">
+          <select> <!-- desplegamos seleccionador para tener las elecciones-->
+            <option selected="">Seleccione Raza*</option>
+            <option value="Pura">Pura</option>
+            <option value="Cruza">Cruza</option>
+            <option value="Criollo">Criollo</option>
+            </select> <!-- finalizamos opciones multiples-->
+           </div>
+            </div>
+ <div class="col-half">
+        <h4>Especificar Raza/Cruza</h4>
+        <div class="input-group input-group-icon">
+          <input type="text" placeholder="Especificar Raza/Cruza"/>
+          <div class="input-icon"><i class="fa fa-random" aria-hidden="true"></i></div>
+        </div>
+      </div>
+        </div> <!--Finalizamos contenedor Raza, Especificar raza/cruza-->
+        
+         <div class="row"> <!-- iniciamos contenedor -->
+ <div class="col-half">
+        <h4>Empadre**</h4>
+        <div class="input-group">
+          <select>  <!-- seleccion, es un grupo de botones-->
+            <option selected="">Seleccione Empadre**</option>
+            <option value="Monta Natural">Monta Natural</option>
+            <option value="Inseminación Artificial">Inseminación Artificial</option>
+            <option value="Transferencia Embrionaria">Transferencia Embrionaria</option>
+            </select> <!-- terminamos seleccion-->
+           </div>
+            </div>
+ <div class="col-half">
+        <h4>Raza/No. SINIIGA</h4>
+        <div class="input-group input-group-icon">
+          <input type="text" placeholder="Padre"/>
+          <div class="input-icon"><i class="fa fa-mars" aria-hidden="true"></i></div>
+        </div>
+     <div class="input-group input-group-icon">
+          <input type="text" placeholder="Madre"/>
+          <div class="input-icon"><i class="fa fa-venus" aria-hidden="true"></i></div>
+        </div>
+      </div>
+        </div>  <!-- Finalizamos al contenedor, de campos empadre, Raza/Num. SINIIGA-->
+        
+        <div class="row">  <!-- nicio contenedor Guardar-->
+             <input type="submit" value="Guardar Registro"/>
+      </div> <!--Fin contenedor Guardar-->
+   
+      </div> <!--Finalizamos contenedor donde estan los formularios-->
+  </form>  <!--finalizamos Formulario-->
+</div> <!--Finaizamos contenedor General-->
+  <script src='http://misoftlife.com/wp-content/formulario_trial/jquery.min.js'></script>
+
+  
+</body>
+</html>
